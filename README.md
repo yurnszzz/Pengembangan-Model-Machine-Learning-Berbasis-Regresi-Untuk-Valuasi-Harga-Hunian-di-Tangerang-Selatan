@@ -10,7 +10,7 @@
 |---|---|
 | **Nama** | Hasan Shofiyyur Rahman |
 | **NIM** | 2410512011 |
-| **Study Club** | Data Science Beginner — KSM Veterantech UPNVJ |
+| **Study Club** | Data Science Basic — KSM Veterantech UPNVJ |
 | **Dataset** | House Pricing South Tangerang |
 | **Algoritma** | Linear Regression & Random Forest Regressor |
 
@@ -171,4 +171,4 @@ Dua model dilatih dan dibandingkan:
 
 ---
 
-*Final Project — Study Club Data Science Beginner, KSM Veterantech UPNVJ, 2026*
+*Final Project — Study Club Data Science Basic, KSM Veterantech UPNVJ, 2026*
