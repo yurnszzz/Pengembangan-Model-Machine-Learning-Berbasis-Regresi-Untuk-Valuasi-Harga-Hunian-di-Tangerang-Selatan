@@ -138,23 +138,23 @@ Dua model dilatih dan dibandingkan:
 ### 5. Model Evaluation & Hyperparameter Tuning
 - **Hyperparameter Tuning:** Menggunakan `RandomizedSearchCV` pada Random Forest
   - Parameter yang dituning: `n_estimators`, `max_depth`, `min_samples_split`, `min_samples_leaf`
-  - Settingan terbaik: `n_estimators=300`, `min_samples_split=5`, `min_samples_leaf=2`, `max_depth=None`
+  - Settingan terbaik: `n_estimators=300`, `min_samples_split=10`, `min_samples_leaf=1`, `max_depth=30`
 - **Metrik Evaluasi:**
 
-| Metrik | Random Forest (Base) | Random Forest (Tuned) |
-|---|---|---|
-| **MAE** | Rp 952.685.070 | Rp 954.212.334 |
-| **R² Score** | 0.6772 | 0.6972 |
+| Metrik | Linear Regression | Random Forest (Base) | Random Forest (Tuned) |
+|---|---|---|---|
+| **MAE** | Rp 1.395.954.091 | Rp 747.577.521 | Rp 756.268.236 |
+| **R² Score** | 0.4166 | 0.7759 | 0.7805 |
 
-- **Peningkatan akurasi** setelah tuning: **+0.0200 poin R²**
-- **Interpretasi:** Faktor yang paling mempengaruhi harga rumah adalah `floor_area_sqm` (luas bangunan), diikuti oleh `bath`, `bed`, dan `kecamatan_encoded`
+- **Peningkatan akurasi** setelah tuning: **+0.0047 poin R²**
+- **Interpretasi:** Faktor yang paling mempengaruhi harga rumah adalah `floor_area_sqm` (luas bangunan ~88%), diikuti oleh `kecamatan_encoded`, `bed`, dan `bath`
 
 ---
 
 ## Hasil & Kesimpulan
 
-- Model **Random Forest Regressor** setelah tuning menghasilkan **R² = 0.6972**, artinya model mampu menjelaskan ~70% variasi harga hunian
-- **Luas bangunan** (`floor_area_sqm`) menjadi fitur paling penting dalam menentukan harga
+- Model **Random Forest Regressor** setelah tuning menghasilkan **R² = 0.7805**, artinya model mampu menjelaskan ~78% variasi harga hunian
+- **Luas bangunan** (`floor_area_sqm`) menjadi fitur paling dominan (~88% importance) dalam menentukan harga
 - Terdapat ruang peningkatan model dengan menambahkan fitur tambahan seperti:
   - Tahun pembangunan
   - Jarak ke fasilitas publik (stasiun, mall, sekolah)
