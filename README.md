@@ -1,6 +1,6 @@
 # Pengembangan Model Machine Learning Berbasis Regresi Untuk Valuasi Harga Hunian di Tangerang Selatan
 
-> Final Project — Study Club Data Science Beginner, KSM Veterantech UPNVJ
+> Final Project — Study Club Data Science Basic, KSM Veterantech UPNVJ
 
 ---
 
